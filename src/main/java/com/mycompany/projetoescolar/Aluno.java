@@ -12,13 +12,14 @@ import java.util.List;
  * @author KAUANEMICHELEALVESTO
  */
 public class Aluno {
-    public String nome;
+    private String nome;
     private String cpf;
-    public int idade;
+    private int idade;
     private String genero;
-    public String responsável;
+    private String responsável;
     private double[] nota = new double[4];
     private String matricula;
+    private  String horario;
     List<Disciplinas> discipinas = new ArrayList();
     List<Turma> turmas = new ArrayList();
     
@@ -28,21 +29,28 @@ public class Aluno {
         this.idade = idade;
         this.genero = genero;
         this.responsável = responsável;
+        this.matricula = matricula;
+        this.horario = horario;
         
     }
     void verSuaNota (){
-        // acessar a nota
+         System.out.print("Notas do aluno " + nome + ": ");
+        for (double nota : nota) {
+            System.out.print(nota + " ");
+        }
     }
     void consultarFrequencia (){
-         
+         System.out.println("Frequências de " + nome + ":");
+        System.out.println("Sistema de frequência ainda não feito");
     }
     void consultarHistorico (){
-         
+         System.out.println("Historico de" + nome + ":");
     }
     void consultarComprovanteDeMatricula (){
-        
+        System.out.println("Comprovante de matrícula de " + nome + " (Matrícula: " + matricula + ")");
     }
     void consultarGradeDeHorario(){
-        
+        System.out.println("Disciplinas: " + nome);
+        System.out.println("Horario: " + horario);
     }
 }

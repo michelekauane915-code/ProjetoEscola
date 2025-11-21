@@ -12,11 +12,13 @@ import java.util.List;
  * @author KAUANEMICHELEALVESTO
  */
 public class Professor {
-    public String nome;
+    private String nome;
     private String cpf;
-    public int idade;
+    private int idade;
     private String genero;
-    List<Disciplinas> discipinas = new ArrayList();
+    private Double salario;
+    private String presenca;
+    List<Disciplinas> disciplinas = new ArrayList();
     List<Turma> turmas = new ArrayList();
     List<Aluno> alunos = new ArrayList();
     
@@ -25,20 +27,30 @@ public class Professor {
         this.cpf = cpf;
         this.idade = idade;
         this.genero = genero;
+        
     }
     void verificarDisciplinas(){
+         System.out.print("Disciplinas do Professor " + nome + ": ");
         
     }
     void inserirNotas (){
         
     }
     void colocarPresenca(){
-        
+        System.out.println("Colocar presença" + presenca + ": ");
+        System.out.println("Sistema de Presença ainda não feito");
     }
     void verificarPresenca(){
-        
+        System.out.println("Verificar presença" + presenca + ": ");
+        System.out.println("Sistema de Presença ainda não feito");
+
+    }
+    void veificarConogramaDasDisciplinas(){
+        System.out.println("Verificar o conograma" + disciplinas + ": ");
     }
     void definirSituacaoAcademicaDoAluno(){
         
     }
+    
 }
+

@@ -12,23 +12,28 @@ import java.util.List;
  * @author KAUANEMICHELEALVESTO
  */
 public class Turma {
+    private String identificador;
     public String horario;
     public String local;
     List<Professor> professores = new ArrayList<>();
     List<Aluno> alunos = new ArrayList();
     
-    public Turma (String horario,String local){
+    public Turma (String horario, String local){
         this.horario = horario;
         this.local = local;
         
     }
-    void definirLimiteDeAluno(){
+    void definirLimiteDeAluno(Aluno aluno){
         
     }
-    void inserirNaProfessoresNaTurma(){
+    void inserirNaProfessoresNaTurma(Professor professor){
+        professores.add(professor);
+    }
+    void inserirNaAlunosNaTurma(Aluno aluno){
+        alunos.add(aluno);
         
     }
-    void inserirNaAlunosNaTurma(){
-        
+    void removerProfessoresNaTurma (Professor professor){
+        professores.remove(professor);
     }
 }

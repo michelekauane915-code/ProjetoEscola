@@ -9,9 +9,9 @@ package com.mycompany.projetoescolar;
  * @author KAUANEMICHELEALVESTO
  */
 public class Colaborador {
-    public String nome;
+    private String nome;
     private String cpf;
-    public int idade;
+    private int idade;
     private String genero;
     public String cargo;
     private double salario;
@@ -24,22 +24,13 @@ public class Colaborador {
         this.genero = genero;
         this.cargo  = cargo;
         this.salario = salario;
-        
+               
     }
-    public String getNome(){
-        return nome;
-    }
-    public int getidade(){
-        return idade;
-    }
-    public String getCargo(){
-        return cargo;
-    }
-    
     void verificarEscalaDeTrabalho(){
-        System.println
+          System.out.println("Escala de trabalho do colaborador " + nome + ": turno a definir");
     }
-    void baterPonto(String horario_inicio, String horario_almoco, String horario_fim_almoco, String fim_horario){
+    void baterPonto(){
+         System.out.println(nome + " bateu o ponto");
         
     }  
 }
