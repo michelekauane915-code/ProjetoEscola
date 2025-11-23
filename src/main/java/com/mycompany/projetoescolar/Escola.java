@@ -32,7 +32,7 @@ public class Escola {
         
     }
     void MatricularAluno(){
-       System.out.println("Aluno matricula: " + alunos);
+       System.out.println("Aluno matricula: 00236-9");
     }
     void ExpulsarAluno(Aluno aluno){
        System.out.println("Expulsar aluno: " + alunos);
@@ -49,7 +49,7 @@ public class Escola {
     }
     void demitirProfessor(Professor professor){
         professores.remove(professor);
-        System.out.println("Professor demitido; " + professores);
+        System.out.println("Professor demitida Jailma");
         
     }
     void suspenderProfessor(Professor professor){

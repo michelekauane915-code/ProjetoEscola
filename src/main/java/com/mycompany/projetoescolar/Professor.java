@@ -44,16 +44,16 @@ public class Professor {
     
     }
     void colocarPresenca(){
-        System.out.println("Colocar presença");
-        System.out.println("presenca não feita hoje\n  por favor, atualizacar presença");
+        System.out.println("Colocar presenca:...");
+        System.out.println("presenca nao feita hoje.\npor favor, atualizacar presenca.");
     }
     void verificarPresenca(){
-        System.out.println("Verificar presença do dia anterio");
+        System.out.println("Verificar presenca do dia anterio");
         System.out.println("Kauane: Presente");
         System.out.println("Mayte: Presente");
         System.out.println("Joao: Falta");
         System.out.println("Felipe: Falta");
-        System.out.println("Pedro: Falta");
+        System.out.println("Pedro: Falta...");
 
     }
     void veificarConogramaDasDisciplina(){

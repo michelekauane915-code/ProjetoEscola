@@ -14,7 +14,7 @@ import java.util.List;
 public class Turma {
     private String identificador = "3 ano 'C' ";
     public String horario = "7:30 ate as 04:40";
-    public String local = "Terreo";
+    public String local = "Primeiro andar";
     List<Professor> professores = new ArrayList<>();
     List<Aluno> alunos = new ArrayList();
     
@@ -31,10 +31,10 @@ public class Turma {
     }
     void inserirNaProfessoresNaTurma(Professor professor){
         professores.add(professor);
-        System.out.println("Professor " + professores + "esta incluindo na turma");
+        System.out.println("Professor " + professores + " esta incluindo na turma");
     }
     void inserirNaAlunosNaTurma(){
-        System.out.println("Aluno " + alunos + "esta incluindo na turma");
+        System.out.println("Aluna Kauane Michele esta incluindo na turma");
         
     }
     void removerProfessoresNaTurma (Professor professor){

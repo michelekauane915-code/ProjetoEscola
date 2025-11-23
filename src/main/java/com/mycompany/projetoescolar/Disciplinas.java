@@ -12,7 +12,7 @@ import java.util.List;
  * @author KAUANEMICHELEALVESTO
  */
 public class Disciplinas {
-    public String nome = "Matématica";
+    public String nome = "Matematica";
     public String horario = "08:30 ate as 09:10";
     List<Professor> professores = new ArrayList<>();
     List<Turma> turmas = new ArrayList();
