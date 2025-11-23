@@ -9,12 +9,16 @@ package com.mycompany.projetoescolar;
  * @author KAUANEMICHELEALVESTO
  */
 public class Colaborador {
-    private String nome;
-    private String cpf;
-    private int idade;
-    private String genero;
-    public String cargo;
-    private double salario;
+    private String nome = "Marcos";
+    private String cpf = "995-642-578-45";
+    private int idade = 27;
+    private String genero = "Homem";
+    public String cargo = "Comunicador";
+    private double salario = 3.000;
+    
+    public Colaborador(){
+    
+    }
     
     public Colaborador (String nome, String cpf, int idade, String genero,
                         String cargo, double salario){
@@ -26,10 +30,10 @@ public class Colaborador {
         this.salario = salario;
                
     }
-    void verificarEscalaDeTrabalho(){
-          System.out.println("Escala de trabalho do colaborador " + nome + ": turno a definir");
+    public void verificarEscalaDeTrabalho(){
+         System.out.println("Escala de trabalho " + nome + ": as 07:10 ate as 04:40");
     }
-    void baterPonto(){
+    public void baterPonto(){
          System.out.println(nome + " bateu o ponto");
         
     }  

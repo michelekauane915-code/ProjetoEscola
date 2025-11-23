@@ -12,26 +12,28 @@ import java.util.List;
  * @author KAUANEMICHELEALVESTO
  */
 public class Disciplinas {
-    public String nome;
-    public String horario;
-    public String materia;
+    public String nome = "Matématica";
+    public String horario = "08:30 ate as 09:10";
     List<Professor> professores = new ArrayList<>();
     List<Turma> turmas = new ArrayList();
     List<Aluno> alunos = new ArrayList();
     
-    public void Disciplinas (){}
+    public Disciplinas(){
+        
+    }
+    
     public Disciplinas (String nome, String horario){
         this.nome = nome;
         this.horario = horario;
-        this.materia = materia;
     }
     void exibirGradeDeHorario(){
-        System.out.println("Disciplina: " + nome);;
-       System.out.println("horario: "+  horario);
+        System.out.println("Disciplina: " + nome);
+        System.out.println("horario: "+  horario);
     }
      public void exibirProfessores(){
-         System.out.println("Nome: " + nome);
-         System.out.println("Matéria: " + materia);
+        System.out.println("Turma 3 anos 'C' ");
+        System.out.println("Professores\nJailma professora de Matematica\nThiago professor de Inglis\nFranciele professora de fisica\nHugo professor de Historia\nBeto professor de Geografia");
+        
     
     }
 }

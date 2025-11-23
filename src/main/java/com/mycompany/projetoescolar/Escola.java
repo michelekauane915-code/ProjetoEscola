@@ -12,13 +12,17 @@ import java.util.List;
  * @author KAUANEMICHELEALVESTO
  */
 public class Escola {
-    String nome;
-    String diretor;
-    String colaboradores;
+    String nome = "Erem Quiteria Wanderly Simões";
+    String diretor = "Almir";
+    String colaboradores = "Marcos";
     List<Professor> professores = new ArrayList<>();
     List<Turma> turmas = new ArrayList();
-    List<Aluno> aluno = new ArrayList();
+    List<Aluno> alunos = new ArrayList();
     List<Colaborador> calaboradores = new ArrayList();
+    
+    public Escola(){
+    
+    }
     
     public Escola(String nome, String diretor){
         this.nome = nome;
@@ -28,28 +32,38 @@ public class Escola {
         
     }
     void MatricularAluno(){
+       System.out.println("Aluno matricula: " + alunos);
+    }
+    void ExpulsarAluno(Aluno aluno){
+       System.out.println("Expulsar aluno: " + alunos);
+    }
+    void OrientarAluno(Aluno aluno){
+        alunos.add(aluno);
+        System.out.println("Orientando o aluno: " + alunos);
         
     }
-    void ExpulsarAluno(){
+    void ContratarProfessor(Professor professor){
+        professores.add(professor);
+        System.out.println("Professor contratado: " + professores);
         
     }
-    void OrientarAluno(){
+    void demitirProfessor(Professor professor){
+        professores.remove(professor);
+        System.out.println("Professor demitido; " + professores);
         
     }
-    void ContratarProfessor(){
+    void suspenderProfessor(Professor professor){
+        professores.add(professor);
+        System.out.println("Suspender o professor: " + professores);
         
     }
-    void demitirProfessor(){
-        
+    void demitirColaborador(){
+       System.out.println("Colaborador foi demitido: " + colaboradores);
+       
     }
-    void suspenderProfessor(){
-        
-    }
-    void dimitirColaborador(){
-        
-    }
-    void suspenderColaborador(){
-        
-    }
-    
+    void suspenderColaborador() {
+       System.out.println("Colaborador foi suspenso: "+ colaboradores);
+   
+    }    
+
 }
